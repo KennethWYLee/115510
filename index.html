@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:,">
+    <title>Artorias Castle 戰鬥系統展示中心</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body style="--accent:#b91c1c;--accent2:#d97706;--accent3:#0891b2;--dark:#0b0f17">
+    <main class="shell">
+      <aside class="rail">
+        <section class="brand">
+          <span class="brand-mark">AC</span>
+          <div>
+            <strong>Artorias Castle</strong>
+            <small>UE5 動作遊戲設計、敵人 AI 與平衡測試</small>
+          </div>
+        </section>
+        <nav class="nav" id="nav"></nav>
+        <section class="operator">
+          <span>操作身分</span>
+          <strong>全權限展示</strong>
+          <small>免登入，公開版使用模擬資料與完整操作流程。</small>
+        </section>
+      </aside>
+      <section class="workspace">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">115510 專業化展示版</p>
+            <h1 id="viewTitle"></h1>
+          </div>
+          <div id="statusLine" class="status-line"></div>
+        </header>
+        <section id="app"></section>
+      </section>
+    </main>
+    <div class="toast" id="toast"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
