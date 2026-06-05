@@ -18,7 +18,18 @@ const project = {
     "重甲騎士切換為追擊",
     "玩家格擋成功觸發反擊窗口",
     "SaveGame 已寫入探索進度"
-  ]
+  ],
+  "ui": {
+    "eyebrow": "動作戰鬥調校",
+    "primaryNav": "戰鬥測試",
+    "capabilityNav": "戰鬥模組",
+    "flowNav": "戰鬥迴圈",
+    "actionLabel": "開始測試",
+    "capabilityTitle": "戰鬥系統模組",
+    "flowTitle": "戰鬥迴圈",
+    "recordTitle": "測試紀錄",
+    "operationNotice": "已移到戰鬥測試區，可調整姿態、敵人難度與存檔狀態。"
+  }
 };
 
 const canvas = document.getElementById("visualCanvas");
@@ -198,7 +209,7 @@ function showNotice(action) {
   const notice = document.getElementById("notice");
   if (!notice) return;
   const map = {
-    operate: "操作中心已就緒，所有作業皆可處理。",
+    operate: project.ui?.operationNotice || "已定位到主要工作區。",
     deploy: "課程資源批次已建立。",
     audit: "課後統一診斷已完成。",
     start: "低衝擊訓練已開始。",
